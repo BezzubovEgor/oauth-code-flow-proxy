@@ -5,6 +5,7 @@ const url = require('url');
 function createServer({
     port,
     proxyParam,
+    allow,
 } = createConfig()) {
 
     const server = http.createServer((req, res) => {
