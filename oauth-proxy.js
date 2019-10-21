@@ -7,7 +7,6 @@ function createServer({
     proxyParam,
     allow,
 } = createConfig()) {
-
     const server = http.createServer((req, res) => {
         const parsedURL = url.parse(req.url);
         const search = new URLSearchParams(parsedURL.search);
