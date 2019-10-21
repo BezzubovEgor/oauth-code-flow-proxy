@@ -1,6 +1,6 @@
 {
   "name": "oauth-code-flow-proxy",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "oauth proxy to configure for your app",
   "main": "oauth-proxy.js",
   "bin": "./bin.js",
