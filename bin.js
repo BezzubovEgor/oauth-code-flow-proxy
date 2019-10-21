@@ -1,5 +1,7 @@
+#!/usr/bin/env node
+
 const { createConfig } = require('./utils/config');
-const { createServer } = require('./index');
+const { createServer } = require('./oauth-proxy');
 
 
 const CONFIG = '--config';

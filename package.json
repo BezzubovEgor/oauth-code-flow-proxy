@@ -1,18 +1,17 @@
 {
   "name": "oauth-code-flow-proxy",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "oauth proxy to configure for your app",
-  "main": "index.js",
-  "bin": "bin.js",
+  "main": "oauth-proxy.js",
+  "bin": "./bin.js",
   "author": "BezzubovEgor",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "bin": "node ./bin.js"
+    "start": "node index.js"
   },
   "files": [
-    "index.js",
     "bin.js",
+    "oauth-proxy.js",
     "utils",
     "README.md",
     "package.json"
