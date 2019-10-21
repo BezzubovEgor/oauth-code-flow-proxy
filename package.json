@@ -7,7 +7,7 @@
   "author": "BezzubovEgor",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node oauth-proxy.js"
   },
   "files": [
     "bin.js",

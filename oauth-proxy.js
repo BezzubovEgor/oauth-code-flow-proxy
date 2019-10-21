@@ -1,5 +1,6 @@
 const http = require('http');
 const url = require('url');
+const { isAllowed } = require('./utils/url');
 
 
 function createServer({
@@ -14,7 +15,13 @@ function createServer({
         const proxyTo = search.get(proxyParam);
         search.delete(proxyParam);
 
-        res.writeHead(302, { 'Location': `${proxyTo}?${search}` });
+        if (isAllowed(proxyTo, allow)) {
+            res.writeHead(302, { 'Location': `${proxyTo}?${search}` });
+            res.end();
+            return;
+        }
+
+        res.writeHead(401);
         res.end();
     });
 

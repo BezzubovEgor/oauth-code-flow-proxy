@@ -1,13 +1,17 @@
 function isAllowed(url, allow) {
-    if (Array.isArray(allow)) {
-        return allow.map(RegExp)
-            .some(testUrl(url));
-    }
-    return new RegExp(allow).test(url);
+    console.log([].concat(allow));
+    return [].concat(allow)
+        .map(createRegExp)
+        .some(testUrl(url));
 }
+
 
 function testUrl(url) {
     return regExp => regExp && regExp.test(url);
+}
+
+function createRegExp(str) {
+    return new RegExp(str);
 }
 
 
