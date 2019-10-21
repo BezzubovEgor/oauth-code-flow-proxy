@@ -8,7 +8,7 @@ function createConfig(path = DEFAULT_CONFIG_PATH) {
     const {
         port = 8888,
         proxyParam = 'proxy_to',
-        allow = '*',
+        allow = '.*',
     } = require(path);
 
     return {
