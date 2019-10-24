@@ -16,7 +16,7 @@ $ yarn add oauth-code-flow-proxy
 3. Start command via your trminal:
 
 ```
-oauth-code-flow-proxy
+$ oauth-code-flow-proxy
 ```
 
 ## Workflow
